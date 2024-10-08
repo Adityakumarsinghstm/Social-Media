@@ -2,6 +2,7 @@ package com.socialMediaApp.controller;
 
 import com.socialMediaApp.customException.UserNotFoundException;
 import com.socialMediaApp.dao.UserDaoService;
+import com.socialMediaApp.entity.Post;
 import com.socialMediaApp.entity.User;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
@@ -51,4 +52,5 @@ public class UserResource {
     {
         service.deleteById(id);
     }
+
 }
